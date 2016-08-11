@@ -2,6 +2,7 @@
   "name": "angular2-quickstart",
   "version": "1.0.0",
   "scripts": {
+    "start": "gulp && concurrently \"gulp watch\" \"npm run lite\" ",
     "postinstall": "typings install",
     "lite": "lite-server",
     "typings": "typings"
