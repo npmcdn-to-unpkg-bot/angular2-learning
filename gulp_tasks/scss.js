@@ -7,7 +7,7 @@ var errorHandler = require( './error-handler.js' );
 
 
 gulp.task( 'scss', function () {
-  return scssToCss( "./src/styles.scss", "./" );
+  return scssToCss( "./src/**/!(_)*.scss", "app" );
 } );
 
 
