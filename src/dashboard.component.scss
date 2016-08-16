@@ -30,20 +30,21 @@ h3 {
 	min-width: 120px;
 	background-color: #607D8B;
 	border-radius: 2px;
+  &:hover {
+    background-color: #EEE;
+    cursor: pointer;
+    color: #607d8b;
+  }
 }
 h4 {
   position: relative;
 }
-.module:hover {
-  background-color: #EEE;
-  cursor: pointer;
-  color: #607d8b;
-}
 .grid-pad {
   padding: 10px 0;
-}
-.grid-pad > [class*='col-']:last-of-type {
-  padding-right: 20px;
+
+  > [class*='col-']:last-of-type {
+    padding-right: 20px;
+  }
 }
 @media (max-width: 600px) {
 	.module {
